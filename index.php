@@ -31,16 +31,13 @@
   function bondTemplate(film){
   return `
   <div class="film">
-    <b>Film</b>: ${film.Film}<br>
-    <b>Title</b>: ${film.Title}<br>
-    <b>Year</b>: ${film.Year}<br>
-    <b>Director</b>: ${film.Director}<br>
-    <b>Producers</b>: ${film.Producers}<br>
-    <b>Writers</b>: ${film.Writers}<br>
-    <b>Composer</b>: ${film.Composer}<br>
-    <b>Bond</b>:${film.Bond}<br>
-    <b>Budget</b>: ${film.Budget}<br>
-    <b>Box Office</b>: ${film.BoxOffice}<br>
+    <b>Title</b>: ${film.Film}<br>
+    <b>Artist</b>: ${film.Title}<br>
+    <b>Cost</b>: ${film.Year}<br>
+    <b>Year</b>: ${film.Director}<br>
+    <b>Note</b>: ${film.Producers}<br>
+    
+    
     <div class="pic"><img src= "thumbnails/${film.Image}"></div>
 </div>
  
@@ -91,9 +88,9 @@ $(document).ready(function() {
 </script>
   </head>
          <body>
-           <h1>Bond Web Service</h1>
-                  <a href="year" class="category">Bond Films By Year</a><br />
-                  <a href="box" class="category">Bond Films By International Box Office Totals</a>
+           <h1>Expensive painting Web Service</h1>
+                  <a href="year" class="category">Expensive paintings</a><br />
+                  
                   <h3 id="filmtitle">Title Will Go Here</h3>
                   <div id="films">
       <!--
